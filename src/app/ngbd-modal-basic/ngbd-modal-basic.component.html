@@ -1,0 +1,23 @@
+<ng-template #content let-c="close" let-d="dismiss"  >
+  <div class="modal-header">
+    <h4 class="modal-title">Hello There!</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <table><tr>
+<td><img src="../assets/myAvatar(1).png" style="width:80%;height:80%"/></td>
+<td><h2>WelCome!! to Aggr</h2></td>
+
+
+    </tr></table>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
+
+<div (init)="ngOnInit()" style="width: 80%;height:80%"></div>
+<hr>
+
